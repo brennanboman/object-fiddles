@@ -144,16 +144,20 @@ Object.keys(album).forEach(function(key){
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
   var states = {
-    California: 50000000,
-    Texas: 50000010,
-    Alaska: 200000,
-    Hawaii: 300000,
-    Wyoming: 100000,
+    California: 50000,
+    Texas: 50000,
+    Alaska: 20000,
+    Hawaii: 30001,
+    Wyoming: 29000
   }//Code Here
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  if ()//Code Here
+  Object.keys(states).forEach(function(key){
+    if (states[key] > 30000) {
+      alert(states[key])
+    }
+  })//Code Here
 
 
 
@@ -174,10 +178,19 @@ var user1 = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+  Object.keys(user1).forEach(function(key){
+    if (user1[key] === true){
+      return true
+    } else {
+      delete user1[key]
+    }
+  })//Code Here
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
+  user1.name = "Brennan";
+  user1.username = "tw1ne";
+  user1.pwHash = "alksdfj";
   //Code Here
 
 
