@@ -59,11 +59,20 @@ Set the value of that key to 'chapstick'.
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
+  var backPack = {};
+  var item = "firstPocket";
+
+  backPack["firstPocket"] = "chapstick";
+
+  backPack.color = "red";
+
   //Code here
 
 //After you do the above, alert your entire backPack object.
 
-  //Code here
+  Object.keys(backPack).forEach(function(key){
+    alert(backPack[key])
+  })//Code here
 
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
@@ -81,11 +90,23 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
+var alsoMe = {
+  name: 'Brennan',
+  age: 29,
+  height: 'Six Feet',
+  gender: 'Male',
+  married: 'Yes',
+  eyeColor: 'Blue',
+  hairColor: 'Blonde'
+}  //Code Here
+
+
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
+Object.keys(alsoMe).forEach(function(key){
+  alert(alsoMe[key])
+})  //Code Here
 
 
 
@@ -97,11 +118,20 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-  //Code Here
+var album = {
+  worstSongEver: '2:54',
+  shortTune: '0:54',
+  superLongMelody: '9:59',
+  songSucks: '0:20',
+  fastSong: '1:01'
+
+}  //Code Here
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
+Object.keys(album).forEach(function(key){
+  alert(album[key])
+})  //Code Here
 
 
 
@@ -113,11 +143,17 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+  var states = {
+    California: 50000000,
+    Texas: 50000010,
+    Alaska: 200000,
+    Hawaii: 300000,
+    Wyoming: 100000,
+  }//Code Here
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
+  if ()//Code Here
 
 
 
