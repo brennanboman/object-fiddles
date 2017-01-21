@@ -215,12 +215,14 @@ var user2 = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
+  user2.name = 'Tyler S. McGinnis'
+  user2.email = 'tyler.mcginnis@devmounta.in'
   //Code Here
 
 //Now call the sayEmail method that's on the user object which will alert the users email
 
   //Code Here
-
+user2.sayEmail()
 
 
 
@@ -231,16 +233,30 @@ var user2 = {
 
 //Create an empty object called methodCollection.
 
+  var methodCollection = {};
   //Code Here
 
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
 
+  methodCollection.alertHello = 'hello';
+
+  alertHello = function(){
+    alert(alertHello[key])
+  }
+
+  methodCollection.logHello = 'hello';
+
+  logHello = function(){
+    console.log(logHello[key])
+  }
   //Code Here
 
 //Now call your alertHello and logHello methods.
 
+alertHello();
+logHello();
   //Code Here
 
 
@@ -252,7 +268,15 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makePerson which takes in name, birthday, ssn as its
 // parameters and returns a new object with all of the information that you passed in.
 
-  //Code Here
+function makePerson(name, birthday, ssn) {
+   var obj = {
+     name: 'name',
+     birthday: 'birthday',
+     ssn: 'ssn'
+   }
+    return obj
+};
+ //Code Here
 
 
 
